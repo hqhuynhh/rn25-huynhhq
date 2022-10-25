@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import { useEffect,useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
@@ -73,15 +73,13 @@ function ListPage() {
             <button
                 type="button"
                 className="btn btn-success"
-                onClick={() => gotoDetail(user.id)}
-              >
+                onClick={() => gotoDetail(user.id)} >
                 Detail
               </button>
               <button
                 type="button"
                 className="btn btn-danger"
-                onClick={() => handleDelete(user.id)}
-              >
+                onClick={() => handleDelete(user.id)}>
                 Delete
               </button>
             </td>
